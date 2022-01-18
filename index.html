@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Algas kalkulators</title>
+
+
+</head>
+
+<body class="d-flex h text-center text-white bg-dark">
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+              <h6 class="lead">This monthly salary calculator helps you to get a net salary from gross salary<!--and vice versa--></h6>
+            </div>
+        </header>
+        
+        <main class="form-signin">
+            <h1 class="name mb-5 text-danger">Monthly salary calculator</h1>
+
+            <form class="form-field">
+                <div class="form-floating mt-3 w-50 mx-auto">
+                  <input onkeyup="salaryInput()" type="number" name="brutto" class="gross form-control border-danger bg-secondary" id="floatingInput" placeholder="Brutto">
+                  <label for="floatingInput" >Monthly gross salary</label>
+                </div>
+
+                <div class="form-floating  mt-3 w-50 mx-auto ">
+                  <input type="number" name="netto" class="net form-control border-danger bg-secondary" id="floatingOutput" placeholder="Netto">
+                  <label for="floatingOutput">Monthly net salary</label>
+                </div>
+            
+             
+                <button onclick="salaryInput()" class="w-40 btn btn-lg btn-secondary fw-bold border-danger mt-3" type="submit" >Calculate salary</button>
+                <!-- <p class="lead">
+              <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Calculate</a>
+            </p>-->
+              </form>
+        
+        </main>
+        <section>
+            <h2>Calculation result: </h2>
+            <p>Monthly gross salary:</p> <ins id="gross"></ins> <p>EUR</p><br>
+            <p>Monthly net salary:</p> <ins id="net"></ins> <p>EUR</p><br>
+            <p>Social tax salary 10.5%:</p> <ins id="socTax"></ins> <p>EUR</p><br>
+            <p>Personal income tax 20%:</p> <ins id="incomeTax"></ins> <p>EUR</p><br>
+            <p>Social tax, employer's part 23.59%:</p> <ins id="employTax"></ins> <p>EUR</p><br>
+            <p>Business risk fee:</p> <ins id="busFee"></ins> <p>EUR</p><br>
+            <p>Total employer's expenses:</p> <ins id="emplEx"></ins> <p>EUR</p>
+        </section>
+        
+
+        <footer class="mt-auto text-white-50">
+            <p> © 2022 Monthly salary alary calculator, author Monta Pecina @<a href="https://webskola.lv/lv/frontendDevelopment" class="text-white">Webskola Frontend izstrāde 2.0</a> courses </p>
+        </footer>
+    </div>
+        
+        
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+        
+</body>
+
+</html>
