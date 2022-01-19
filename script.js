@@ -39,5 +39,11 @@ function calculate(salary){
       document.getElementById("employTax").innerHTML = socialTaxEmployersPart;
       document.getElementById("busFee").innerHTML = businessRiskFee;
       document.getElementById("emplEx").innerHTML = totEmployerExpenses;
-
 }
+
+  
+$( "#resetSalaryCalculation" ).click(function() {
+    $( "ins" ).empty();
+    $( "span" ).empty();
+    $( "#grossnSalaryInput" ).empty();
+  });
